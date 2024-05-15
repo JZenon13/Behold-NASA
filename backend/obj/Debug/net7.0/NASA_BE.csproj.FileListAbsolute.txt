@@ -1,0 +1,15 @@
+/home/jzenon/Desktop/CTC-Repos/project/Behold-NASA/backend/bin/Debug/net7.0/NASA_BE
+/home/jzenon/Desktop/CTC-Repos/project/Behold-NASA/backend/bin/Debug/net7.0/NASA_BE.deps.json
+/home/jzenon/Desktop/CTC-Repos/project/Behold-NASA/backend/bin/Debug/net7.0/NASA_BE.runtimeconfig.json
+/home/jzenon/Desktop/CTC-Repos/project/Behold-NASA/backend/bin/Debug/net7.0/NASA_BE.dll
+/home/jzenon/Desktop/CTC-Repos/project/Behold-NASA/backend/bin/Debug/net7.0/NASA_BE.pdb
+/home/jzenon/Desktop/CTC-Repos/project/Behold-NASA/backend/obj/Debug/net7.0/NASA_BE.csproj.AssemblyReference.cache
+/home/jzenon/Desktop/CTC-Repos/project/Behold-NASA/backend/obj/Debug/net7.0/NASA_BE.GeneratedMSBuildEditorConfig.editorconfig
+/home/jzenon/Desktop/CTC-Repos/project/Behold-NASA/backend/obj/Debug/net7.0/NASA_BE.AssemblyInfoInputs.cache
+/home/jzenon/Desktop/CTC-Repos/project/Behold-NASA/backend/obj/Debug/net7.0/NASA_BE.AssemblyInfo.cs
+/home/jzenon/Desktop/CTC-Repos/project/Behold-NASA/backend/obj/Debug/net7.0/NASA_BE.csproj.CoreCompileInputs.cache
+/home/jzenon/Desktop/CTC-Repos/project/Behold-NASA/backend/obj/Debug/net7.0/NASA_BE.dll
+/home/jzenon/Desktop/CTC-Repos/project/Behold-NASA/backend/obj/Debug/net7.0/refint/NASA_BE.dll
+/home/jzenon/Desktop/CTC-Repos/project/Behold-NASA/backend/obj/Debug/net7.0/NASA_BE.pdb
+/home/jzenon/Desktop/CTC-Repos/project/Behold-NASA/backend/obj/Debug/net7.0/NASA_BE.genruntimeconfig.cache
+/home/jzenon/Desktop/CTC-Repos/project/Behold-NASA/backend/obj/Debug/net7.0/ref/NASA_BE.dll
