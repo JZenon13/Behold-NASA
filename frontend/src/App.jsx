@@ -1,29 +1,37 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { getAllPhotos } from "./api/marsRoverPhotos";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [photos, setPhotos] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    getAllPhotos().then((data) => {
+      const formattedData = data.map((photo) => {
+        const date = new Date(photo.date);
+        return { ...photo, date: date.toLocaleDateString() };
+      });
+      setPhotos(formattedData);
+      setLoading(false);
+    });
+  }, []);
+
+  if (loading) {
+    return <h2>Loading NASA Photos...</h2>;
+  }
   return (
     <>
+      <h1>Mars Rover Images</h1>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src="" className="logo react" alt="React logo" />
-        </a>
+        {photos?.map((photo, index) => (
+          <div key={index}>
+            <h2>{photo.date}</h2>
+            {photo.images.map((img, imgIndex) => (
+              <img key={imgIndex} src={img} alt={`Mars Rover ${imgIndex}`} />
+            ))}
+          </div>
+        ))}
       </div>
-      <h1>Mars Rover Photos</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   );
 }

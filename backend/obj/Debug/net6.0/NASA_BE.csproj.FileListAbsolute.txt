@@ -1,0 +1,5 @@
+/home/jzenon/Desktop/CTC-Repos/project/Behold-NASA/backend/obj/Debug/net6.0/NASA_BE.csproj.AssemblyReference.cache
+/home/jzenon/Desktop/CTC-Repos/project/Behold-NASA/backend/obj/Debug/net6.0/NASA_BE.GeneratedMSBuildEditorConfig.editorconfig
+/home/jzenon/Desktop/CTC-Repos/project/Behold-NASA/backend/obj/Debug/net6.0/NASA_BE.AssemblyInfoInputs.cache
+/home/jzenon/Desktop/CTC-Repos/project/Behold-NASA/backend/obj/Debug/net6.0/NASA_BE.AssemblyInfo.cs
+/home/jzenon/Desktop/CTC-Repos/project/Behold-NASA/backend/obj/Debug/net6.0/NASA_BE.csproj.CoreCompileInputs.cache
