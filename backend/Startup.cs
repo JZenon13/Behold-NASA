@@ -12,6 +12,8 @@ namespace NASA_BE
   public class Startup
   {
     private readonly IConfiguration _configuration;
+    private const string AllowAnyOriginPolicy = "AllowAnyOrigin";
+
 
     public Startup(IConfiguration configuration)
     {
@@ -22,7 +24,7 @@ namespace NASA_BE
     {
       services.AddCors(options =>
       {
-        options.AddPolicy("AllowAnyOrigin",
+        options.AddPolicy(AllowAnyOriginPolicy,
                   builder =>
                   {
                     builder.AllowAnyOrigin()
@@ -33,7 +35,7 @@ namespace NASA_BE
 
       services.AddControllers();
       services.AddHttpClient();
-      services.AddTransient<BeholdNasa>(); // Register your NasaApiService
+      services.AddTransient<BeholdNasa>();
     }
 
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILogger<Startup> logger)
@@ -55,7 +57,7 @@ namespace NASA_BE
         });
       }
 
-      app.UseCors("AllowAnyOrigin");
+      app.UseCors(AllowAnyOriginPolicy);
 
       app.UseRouting();
 

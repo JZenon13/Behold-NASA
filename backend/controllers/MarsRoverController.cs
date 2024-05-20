@@ -1,7 +1,4 @@
-using System;
 using Microsoft.AspNetCore.Mvc;
-using System.IO;
-using System.Threading.Tasks;
 using System.Globalization;
 using MarsRoverPhotos.Services;
 
@@ -22,7 +19,10 @@ namespace MarsRoverPhotos.Controllers
     public async Task<IActionResult> DownloadImages()
     {
       string path = Path.Combine(Directory.GetCurrentDirectory(), "api", "dates.txt");
+
       var dates = System.IO.File.ReadAllLines(path);
+
+
 
       string[] dateFormats = { "MM/dd/yy", "MMMM d, yyyy", "MMM-dd-yyyy" };
 

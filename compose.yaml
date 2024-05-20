@@ -1,9 +1,14 @@
 services:
   frontend:
     build: ./frontend
+    environment:
+      - VITE_BE_URL=${VITE_BE_URL}
     ports:
       - "5173:5173"
   backend:
     build: ./backend
+    environment:
+      - API_KEY=${API_KEY}
+      - API_URL=${API_URL}
     ports:
       - "5000:80"

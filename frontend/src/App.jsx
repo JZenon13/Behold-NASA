@@ -17,7 +17,7 @@ function App() {
   }, []);
 
   if (loading) {
-    return <h2>Loading NASA Photos...</h2>;
+    return <h2>Loading Photos from NASA...</h2>;
   }
   return (
     <>

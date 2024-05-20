@@ -1,8 +1,8 @@
+const beUrl = import.meta.env.VITE_BE_URL;
+
 export const getAllPhotos = async () => {
   try {
-    const res = await fetch(
-      `http://localhost:5000/api/marsrover/download-images`
-    );
+    const res = await fetch(`${beUrl}`);
 
     if (!res.ok) {
       throw new Error(`HTTP error! status: ${res.status}`);
